@@ -32,6 +32,8 @@ public class HashtableDemo {
         hashtable.put("10", "j");
         hashtable.put("11", "k");
         hashtable.put("12", "l");
+        hashtable.put("13", "m");
+
         /**
          * 测试添加 key 相同 value 不同
          */
