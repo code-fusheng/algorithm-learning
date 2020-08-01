@@ -63,14 +63,10 @@ public class HashMapDemo {
             System.out.println("键:" + entry.getKey() + "---值:" + entry.getValue());
         }
 
+        hashMap.remove("free");
         // 清空 hashMap
         hashMap.clear();
         System.out.println("==> 判断 hashMap 容器是否清空:\n" + hashMap.isEmpty());
 
     }
-
-
-
-
-
 }
