@@ -1,5 +1,6 @@
 package xyz.fusheng.day8_树;
 
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -40,9 +41,12 @@ public class TreeMapDemo {
 
         System.out.println(treeMap2);
 
+        String getValue = treeMap2.get("1");
+        System.out.println(getValue);
+
+        String removeValue = treeMap2.remove("7");
+        System.out.println(removeValue);
+
+        System.out.println(treeMap2);
     }
-
-
-
-
 }
