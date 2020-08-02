@@ -24,6 +24,7 @@ public class HashSetDemo {
         hashSet.add("Friday");
         hashSet.add("Saturday");
         hashSet.add("Sunday");
+        hashSet.add("Sunday");
 
         // 打印对象
         System.out.println(hashSet);
