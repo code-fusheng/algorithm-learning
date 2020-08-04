@@ -10,6 +10,12 @@ package xyz.fusheng.leetcode;
 
 public class No35SearchIndex {
 
+    /**
+     * 传统遍历数组
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int SearchIndex(int[] nums, int target) {
         int searchIndex = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -27,6 +33,12 @@ public class No35SearchIndex {
         return searchIndex;
     }
 
+    /**
+     * 二分法
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int SearchIndexPro(int[] nums, int target) {
         int searchIndex = nums.length;
         int left = 0;
@@ -50,7 +62,6 @@ public class No35SearchIndex {
 
         int[] nums = {1, 3, 5, 6};
         int target = 7;
-
 
         int result = SearchIndexPro(nums, target);
         System.out.println(result);
