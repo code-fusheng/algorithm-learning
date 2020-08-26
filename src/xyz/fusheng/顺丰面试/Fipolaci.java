@@ -1,14 +1,16 @@
-package xyz.fusheng;
+package xyz.fusheng.顺丰面试;
 
-import java.util.Scanner;
+/**
+ * @FileName: FBLQ
+ * @Author: code-fusheng
+ * @Date: 2020/8/26 19:02
+ * @version: 1.0
+ * Description: 斐波拉契
+ */
 
-public class Main {
-    public static void main(String[] args) {
-        int k = 0;
-        Scanner in = new Scanner(System.in);
-        while (in.hasNextInt()) {// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
-            k = in.nextInt();
-        }
+public class Fipolaci {
+
+    public static int fipolaci(int k) {
         int result = 0;
         int first = 1;
         int second = 1;
@@ -23,6 +25,11 @@ public class Main {
                 second = result;
             }
         }
-        System.out.println(result);
+        return result;
     }
+
+    public static void main(String[] args) {
+        System.out.println(fipolaci(19));
+    }
+
 }
