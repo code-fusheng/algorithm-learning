@@ -1,4 +1,4 @@
-package xyz.fusheng.顺丰面试;
+package xyz.fusheng.思迈特笔试;
 
 /**
  * @FileName: FBLQ
