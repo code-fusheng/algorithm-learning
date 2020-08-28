@@ -16,41 +16,11 @@ import java.util.Scanner;
 public class No28AchieveStrZH {
 
     public static int achieveStr(String haystack, String needle) {
-        if ( haystack == "" && needle == "") {
-            return 0;
-        }
-        int result = 0;
-        boolean flag = true;
-        int count = 0;
+        int L = needle.length(), n = haystack.length();
 
-        char[] chars1 = haystack.toCharArray();
-        char[] chars2 = needle.toCharArray();
-
-        int mark1 = 0;
-        int mark2 = 0;
-
-        for (int i = mark1; i < chars1.length; i ++) {
-            for (int j = mark2; j < chars2.length;  j ++) {
-                if (chars1[i] == chars2[j]) {
-                    mark1 = i;
-                    mark2 = j + 1;
-                    count ++;
-                    if (flag) {
-                        result = mark1;
-                        flag = false;
-                    }
-                    if (j == chars2.length - 1 && count == chars2.length) {
-                        return result;
-                    }
-                    break;
-                } else {
-                    count = 0;
-                    mark2 = 0;
-                    if (j == chars2.length - 1 && flag == false) {
-                        return -1;
-                    }
-                    flag = true;
-                }
+        for (int start = 0; start < n - L + 1; ++start) {
+            if (haystack.substring(start, start + L).equals(needle)) {
+                return start;
             }
         }
         return -1;
